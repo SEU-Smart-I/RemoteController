@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/x_fine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="11dp"
+        android:text="X-Fine"
+        android:textAllCaps="false"
+        style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+        app:layout_constraintStart_toStartOf="@id/x_textInputEditText"
+        app:layout_constraintEnd_toEndOf="@id/x_textInputEditText"
+        app:layout_constraintTop_toBottomOf="@id/switchButton"
+        app:layout_constraintBottom_toTopOf="@id/x_textInputEditText" />
+
+    <TextView
+        android:id="@+id/x_textView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="80dp"
+        android:text="X:"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="@id/x_textInputEditText"
+        app:layout_constraintStart_toStartOf="@id/switchButton"
+        app:layout_constraintEnd_toEndOf="@id/x_textInputEditText"
+        app:layout_constraintBottom_toBottomOf="@id/x_textInputEditText" />
+
+    <EditText
+        android:id="@+id/x_textInputEditText"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginBottom="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="0dp"
+        android:hint=""
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/switchButton"
+        app:layout_constraintEnd_toEndOf="@+id/switchButton"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/x_minus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="50dp"
+        android:text="-"
+        app:layout_constraintTop_toBottomOf="@id/x_textInputEditText"
+        app:layout_constraintStart_toStartOf="@id/x_textInputEditText"
+        app:layout_constraintEnd_toEndOf="@id/x_textInputEditText"/>
+
+    <Button
+        android:id="@+id/x_plus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:text="+"
+        app:layout_constraintTop_toBottomOf="@id/x_textInputEditText"
+        app:layout_constraintStart_toStartOf="@id/x_textInputEditText"
+        app:layout_constraintEnd_toEndOf="@id/x_textInputEditText" />
+
+    <CheckBox
+        android:id="@+id/y_fine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="11dp"
+        android:text="Y-Fine"
+        android:textAllCaps="false"
+        style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+        app:layout_constraintStart_toStartOf="@id/y_textInputEditText"
+        app:layout_constraintEnd_toEndOf="@id/y_textInputEditText"
+        app:layout_constraintTop_toBottomOf="@id/magnification"
+        app:layout_constraintBottom_toTopOf="@id/y_textInputEditText" />
+
+    <TextView
+        android:id="@+id/y_textView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="80dp"
+        android:text="Y:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@id/magnification"
+        app:layout_constraintEnd_toEndOf="@id/y_textInputEditText"
+        app:layout_constraintTop_toTopOf="@id/y_textInputEditText"
+        app:layout_constraintBottom_toBottomOf="@id/y_textInputEditText"/>
+
+    <EditText
+        android:id="@+id/y_textInputEditText"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginBottom="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="0dp"
+        android:hint=""
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/magnification"
+        app:layout_constraintEnd_toEndOf="@id/magnification"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/y_minus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="50dp"
+        android:text="-"
+        app:layout_constraintTop_toBottomOf="@id/y_textInputEditText"
+        app:layout_constraintStart_toStartOf="@id/y_textInputEditText"
+        app:layout_constraintEnd_toEndOf="@id/y_textInputEditText"/>
+
+    <Button
+        android:id="@+id/y_plus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:text="+"
+        app:layout_constraintTop_toBottomOf="@id/y_textInputEditText"
+        app:layout_constraintStart_toStartOf="@id/y_textInputEditText"
+        app:layout_constraintEnd_toEndOf="@id/y_textInputEditText" />
+
+    <CheckBox
+        android:id="@+id/z_fine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="11dp"
+        android:text="Z-Fine"
+        android:textAllCaps="false"
+        style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+        app:layout_constraintStart_toStartOf="@id/z_textInputEditText"
+        app:layout_constraintEnd_toEndOf="@id/z_textInputEditText"
+        app:layout_constraintTop_toBottomOf="@id/sendCommand"
+        app:layout_constraintBottom_toTopOf="@id/z_textInputEditText" />
+    <TextView
+        android:id="@+id/z_textView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="80dp"
+        android:text="Z:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@id/sendCommand"
+        app:layout_constraintEnd_toEndOf="@id/z_textInputEditText"
+        app:layout_constraintTop_toTopOf="@id/z_textInputEditText"
+        app:layout_constraintBottom_toBottomOf="@id/z_textInputEditText" />
+
+    <EditText
+        android:id="@+id/z_textInputEditText"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginBottom="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="0dp"
+        android:hint=""
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/sendCommand"
+        app:layout_constraintEnd_toEndOf="@id/sendCommand"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/z_minus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="50dp"
+        android:text="-"
+        app:layout_constraintTop_toBottomOf="@id/z_textInputEditText"
+        app:layout_constraintStart_toStartOf="@id/z_textInputEditText"
+        app:layout_constraintEnd_toEndOf="@id/z_textInputEditText" />
+
+    <Button
+        android:id="@+id/z_plus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:text="+"
+        app:layout_constraintTop_toBottomOf="@id/z_textInputEditText"
+        app:layout_constraintStart_toStartOf="@id/z_textInputEditText"
+        app:layout_constraintEnd_toEndOf="@id/z_textInputEditText" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="381dp"
+        android:layout_height="263dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="53dp"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="x_textInputEditText,x_textView,x_fine,x_plus,x_minus" />
+
+    <Button
+        android:id="@+id/switchButton"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="320dp"
+        android:text="Microscope"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/magnification"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/magnification"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="320dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:text="x 4"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/sendCommand"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="320dp"
+        android:text="Send Command"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/magnification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
